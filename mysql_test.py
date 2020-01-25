@@ -10,7 +10,7 @@ mydb = mysql.connector.connect(
 sql = """
     select b.codigo, b.loja, b.nosso_numero, b.vencimento, b.valor
       from boletos b join cadastros_emails e on b.cadastro_codigo=e.cadastro_codigo and b.cadastro_loja=e.cadastro_loja
-     where e.recebe_cobranca=1 and e.email='murilo@autogeral.com.br'
+     where e.recebe_cobranca=1 and e.email='usuario@gmail.com'
      order by b.pago, b.vencimento
      limit 20
       """
